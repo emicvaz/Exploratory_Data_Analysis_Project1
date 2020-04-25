@@ -1,6 +1,6 @@
 library(dplyr)
-####Data####
-setwd("~/Cursos/Analysis_Exploratory_Data/Datos")
+
+#We Setting in our Working Directory#
 datos <- read.table("household_power_consumption.txt", header=TRUE, sep=";", na.strings = "?", colClasses = c('character','character','numeric','numeric','numeric','numeric','numeric','numeric','numeric'))
 
 datos$Date <- as.Date(datos$Date, "%d/%m/%Y")
